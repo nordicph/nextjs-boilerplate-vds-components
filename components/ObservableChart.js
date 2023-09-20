@@ -1,26 +1,31 @@
 'use client'
-import React, { useEffect, useRef } from "react";
-import { Runtime, Inspector } from "@observablehq/runtime";
-import notebook from "./obs_code/package.json";
+// components/ObservableChart.js
 
-function ObservableChart() {
-  const chartRef = useRef();
+import React, { useEffect } from "react";
 
+const ObservableChart = () => {
   useEffect(() => {
-    const runtime = new Runtime();
-    runtime.module(notebook, (name) => {
-      if (name === "chart") {
-        return new Inspector(chartRef.current);
-      }
+    import("@observablehq/runtime").then(({ Runtime, Inspector }) => {
+      import("https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470.js?v=3").then((define) => {
+        new Runtime().module(define.default, (name) => {
+          if (name === "chart") {
+            return new Inspector(document.querySelector("#observablehq-chart-32e484a1"));
+          }
+        });
+      });
     });
-    return () => runtime.dispose();
   }, []);
 
   return (
-    <>
-      <div ref={chartRef}></div>
-    </>
+    <div id="observablehq-chart-32e484a1">
+      <p>
+        Credit:{" "}
+        <a href="https://observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470">
+          Untitled by Sergiy Vasyletskyy's Workspace
+        </a>
+      </p>
+    </div>
   );
-}
+};
 
 export default ObservableChart;
