@@ -3,11 +3,11 @@ import { Runtime, Inspector } from "@observablehq/runtime";
 import notebook from "@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown";
 
 function Vdspdptemplatebreakdown() {
-  const chart6Ref = useRef();
+  const chart6Ref = useRef<HTMLDivElement | null>(null); // Corrected line
 
   useEffect(() => {
     const runtime = new Runtime();
-    runtime.module(notebook, (name: string) => { // Explicitly set the type here
+    runtime.module(notebook, (name: string) => {
       if (name === "chart6") return new Inspector(chart6Ref.current);
     });
     return () => runtime.dispose();
