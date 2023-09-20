@@ -30,7 +30,7 @@ const ObservableChart = () => {
       <p>
         Credit:{" "}
         <a href="https://observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470">
-          Untitled by Sergiy Vasyletskyy's Workspace
+          Untitled by Sergiy Vasyletskyy&apos;s Workspace
         </a>
       </p>
     </div>
