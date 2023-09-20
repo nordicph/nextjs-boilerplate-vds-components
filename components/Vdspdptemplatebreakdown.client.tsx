@@ -17,7 +17,7 @@ function Vdspdptemplatebreakdown() {
   return (
     <>
       <div ref={chart6Ref} />
-      <p>Credit: <a href="https://observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470">Untitled by Sergiy Vasyletskyy&#039;s Workspace</a></p>
+      <p>Credit: by Sergiy Vasyletskyy&#039;s Workspace</a></p>
     </>
   );
 }
