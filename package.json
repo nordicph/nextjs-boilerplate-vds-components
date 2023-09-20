@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@observablehq/runtime": "5",
+    "@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown": "https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470.tgz?v=3",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
