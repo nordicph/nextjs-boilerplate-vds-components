@@ -1,5 +1,9 @@
 import Image from 'next/image'
-import Vdspdptemplatebreakdown from '../components/Vdspdptemplatebreakdown';
+import dynamic from 'next/dynamic';
+
+const Vdspdptemplatebreakdown = dynamic(
+  () => import('../components/Vdspdptemplatebreakdown')
+);
 
 export default function Home() {
   return (
