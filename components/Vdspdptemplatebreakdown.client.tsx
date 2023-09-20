@@ -8,7 +8,7 @@ function Vdspdptemplatebreakdown() {
 
   useEffect(() => {
     const runtime = new Runtime();
-    runtime.module(notebook, (name) => {
+    runtime.module(notebook, (name: string) => { // Explicitly specify the type
       if (name === "chart6" && chart6Ref.current) {
         return new Inspector(chart6Ref.current);
       }
