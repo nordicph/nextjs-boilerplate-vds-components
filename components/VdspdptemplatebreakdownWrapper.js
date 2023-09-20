@@ -1,16 +1,12 @@
-import { use client } from 'next';
 import dynamic from 'next/dynamic';
 
 const Vdspdptemplatebreakdown = dynamic(
   () => import('./Vdspdptemplatebreakdown.client.tsx'),
-  {
-    ssr: false, // This will load the component only on the client side.
-    loading: () => <p>Loading...</p>
-  }
+  { ssr: false }
 );
 
-function VdspdptemplatebreakdownWrapper() {
-  return <Vdspdptemplatebreakdown />;
+function VdspdptemplatebreakdownWrapper(props) {
+  return <Vdspdptemplatebreakdown {...props} />;
 }
 
 export default VdspdptemplatebreakdownWrapper;
