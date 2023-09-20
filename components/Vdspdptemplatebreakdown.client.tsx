@@ -4,7 +4,7 @@ import { Runtime, Inspector } from "@observablehq/runtime";
 import notebook from "@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown";
 
 function Vdspdptemplatebreakdown() {
-  const chart6Ref = useRef<HTMLDivElement | null>(null); // Corrected line
+  const chart6Ref = useRef();
 
   useEffect(() => {
     const runtime = new Runtime();
