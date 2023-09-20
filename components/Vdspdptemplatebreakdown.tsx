@@ -3,7 +3,6 @@ import {Runtime, Inspector} from "@observablehq/runtime";
 import notebook from "@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown";
 
 function Vdspdptemplatebreakdown() {
-  use client();
   const chart6Ref = useRef();
 
   useEffect(() => {
