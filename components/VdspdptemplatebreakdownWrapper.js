@@ -1,3 +1,4 @@
+import { use client } from 'next';
 import dynamic from 'next/dynamic';
 
 const Vdspdptemplatebreakdown = dynamic(
