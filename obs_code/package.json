@@ -1,0 +1,14 @@
+{
+  "name": "@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown",
+  "main": "17a8a821bb1fc29e@470.js",
+  "version": "470.0.0",
+  "homepage": "https://observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown",
+  "author": {
+    "name": "Sergiy Vasyletskyy's Workspace",
+    "url": "https://observablehq.com/@sergiy-vasyletskyy-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

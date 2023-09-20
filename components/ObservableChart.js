@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Runtime, Inspector } from "@observablehq/runtime";
-import notebook from "./obs_code/obs.json";
+import notebook from "./obs_code/package.json";
 
 function ObservableChart() {
   const chartRef = useRef();
