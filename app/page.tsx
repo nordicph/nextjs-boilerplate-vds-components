@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import dynamic from 'next/dynamic';
-import VdspdptemplatebreakdownWrapper from '../components/VdspdptemplatebreakdownWrapper';
 import ObservableChart from "../components/ObservableChart";
 
 export default function Home() {
