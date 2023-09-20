@@ -3,7 +3,7 @@ import { Runtime, Inspector } from "@observablehq/runtime";
 import notebook from "@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown";
 
 function Vdspdptemplatebreakdown() {
-  const chart6Ref = useRef(null);
+  const chart6Ref = useRef();
 
   useEffect(() => {
     const runtime = new Runtime();
@@ -14,12 +14,10 @@ function Vdspdptemplatebreakdown() {
   }, []);
 
   return (
-    <div>
-      <div ref={chart6Ref}></div>
-      <p>
-        Credit: <a href="https://observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470">Untitled by Sergiy Vasyletskyy&#039;s Workspace</a>
-      </p>
-    </div>
+    <>
+      <div ref={chart6Ref} />
+      <p>Credit: <a href="https://observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470">Untitled by Sergiy Vasyletskyy&#039;s Workspace</a></p>
+    </>
   );
 }
 
