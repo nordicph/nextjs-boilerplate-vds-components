@@ -3,17 +3,26 @@
 
 import React, { useEffect } from "react";
 
+const loadObservableChart = async () => {
+  // Fetch the Observable chart code
+  const response = await fetch(
+    "https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470.js?v=3"
+  );
+  const chartCode = await response.text();
+
+  // Create a script element and set the chart code as its content
+  const script = document.createElement("script");
+  script.type = "module";
+  script.textContent = chartCode;
+
+  // Append the script to the document
+  document.body.appendChild(script);
+};
+
 const ObservableChart = () => {
   useEffect(() => {
-    import("@observablehq/runtime").then(({ Runtime, Inspector }) => {
-      import("https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470.js?v=3").then((define) => {
-        new Runtime().module(define.default, (name) => {
-          if (name === "chart") {
-            return new Inspector(document.querySelector("#observablehq-chart-32e484a1"));
-          }
-        });
-      });
-    });
+    // Load the Observable chart when the component mounts
+    loadObservableChart();
   }, []);
 
   return (
