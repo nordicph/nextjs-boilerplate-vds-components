@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { Runtime, Inspector } from "@observablehq/runtime";
+import notebook from "./obs_code/obs.json";
 
 function ObservableChart() {
+  const chartRef = useRef();
+
+  useEffect(() => {
+    const runtime = new Runtime();
+    runtime.module(notebook, (name) => {
+      if (name === "chart") {
+        return new Inspector(chartRef.current);
+      }
+    });
+    return () => runtime.dispose();
+  }, []);
+
   return (
-    <div>
-      <iframe
-        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown?cell=chart6"
-        frameBorder="0"
-        allowFullScreen
-        width="100%"
-        height="400px"
-      ></iframe>
-    </div>
+    <>
+      <div ref={chartRef}></div>
+    </>
   );
 }
 

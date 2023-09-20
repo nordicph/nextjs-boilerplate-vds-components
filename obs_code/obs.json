@@ -1,0 +1,1855 @@
+{
+    "name": "A Standard Website",
+    "description": "Standard Website Decomposition",
+    "value": "1",
+    "status": "WIP",
+    "milestone": "(IV)",
+    "taxonomy": "Template",
+    "jira": "",
+    "children": [
+        {
+            "name": "Header",
+            "description": "Header Template",
+            "value": "1",
+            "status": "WIP",
+            "milestone": "(III)",
+            "taxonomy": "Layout",
+            "jira": "",
+            "children": [
+                {
+                    "name": "Primary Navigation",
+                    "description": "Primary Navigation",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Organism",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Logo",
+                            "description": "Logo Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Icon",
+                                    "description": "Icon Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Link",
+                                    "description": "Link Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Navigation Menu",
+                            "description": "Primary Navigation Menu",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Hamburger Menu",
+                                    "description": "Hamburger Menu Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Organism",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Navigation Menu Mobile Elements",
+                                            "description": "Navigation Menu Link Elements",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(II)",
+                                            "taxonomy": "Organism",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Hamburger Menu Button",
+                                            "description": "Icon Button with Open/Close icon",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": [
+                                                {
+                                                    "name": "Icon Button",
+                                                    "description": "Icon Button Component. A button designed specifically for usage with a single icon",
+                                                    "value": "1",
+                                                    "status": "Ready",
+                                                    "milestone": "(I)",
+                                                    "taxonomy": "Molecule",
+                                                    "jira": "",
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Desktop Menu",
+                                    "description": "Desktop Menu Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Organism",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Navigation Menu Desktop Elements",
+                                            "description": "Navigation Menu Desktop Elements",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(II)",
+                                            "taxonomy": "Organism",
+                                            "jira": "https://jira.jnj.com/browse/JEPZ-811",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Divider",
+                                    "description": "Divider Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Search",
+                            "description": "Search Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(III+)",
+                            "taxonomy": "Organism",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Input Field",
+                                    "description": "Input Field or Integration ",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Secondary Navigation",
+                    "description": "Secondary Navigation Menu",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Organism",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "List of Links",
+                            "description": "List of Links Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Link",
+                                    "description": "Link Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Language Selector",
+                                    "description": "Language Selectoror Integration ",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(III)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "WTB Button",
+                    "description": "Button",
+                    "value": "1",
+                    "status": "Ready",
+                    "milestone": "(III+)",
+                    "taxonomy": "Molecule",
+                    "jira": "",
+                    "children": []
+                },
+                {
+                    "name": "Breadcrumbs",
+                    "description": "Trail of links showing the path to the current product",
+                    "value": "1",
+                    "status": "Ready",
+                    "milestone": "(I)",
+                    "taxonomy": "Molecule",
+                    "jira": "",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Product Details Page",
+            "description": "Complete template for displaying Product details",
+            "value": "1",
+            "status": "WIP",
+            "milestone": "(III+)",
+            "taxonomy": "Template",
+            "jira": "",
+            "children": [
+                {
+                    "name": "PDP Product Overview",
+                    "description": "Product images, videos, and other media content",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Organism",
+                    "jira": "https://jira.jnj.com/browse/JEPZ-853",
+                    "children": [
+                        {
+                            "name": "Image Carousel",
+                            "description": "Small clickable thumbnails of additional product images",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "https://jira.jnj.com/browse/JEPZ-927",
+                            "children": [
+                                {
+                                    "name": "Media Wrapper",
+                                    "description": "Media Wrapper Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Scroll Indicator",
+                                    "description": "Scroll Indicator Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Headline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Typography",
+                                    "description": "Typography Tokens",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Token",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Color Palette",
+                                    "description": "Color Palette Tokens",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Token",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Rounding Tokens",
+                                    "description": "Rounding Tokens",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Token",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Width Tokens",
+                                    "description": "Width Tokens",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Token",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SubHeadline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Typography",
+                                    "description": "Typography Tokens",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Token",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Rating & Reviews",
+                            "description": "Rating & Reviews Integration",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(III*)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Button",
+                            "description": "Button Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Description",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Typography",
+                                    "description": "Typography Tokens",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Token",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Quantity Selector",
+                            "description": "Quantity Selector",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(III+)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Typography",
+                                    "description": "Typography Tokens",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Token",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Variant Selector Section",
+                            "description": "Variant Selector",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(III+)",
+                            "taxonomy": "Organism",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "List of Variant Selectors",
+                                    "description": "List of Variant Selectors",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(III+)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Label",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Variant Selector Elemenent",
+                                            "description": "Variant Selector Elemenent",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(III+)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": [
+                                                {
+                                                    "name": "Button",
+                                                    "description": "Button Component",
+                                                    "value": "1",
+                                                    "status": "Ready",
+                                                    "milestone": "(I)",
+                                                    "taxonomy": "Atom",
+                                                    "jira": "",
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Product Information Section",
+                    "description": "A list of Accordions: Usage, Ingredients, Directions, Warnings, Additional Information",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Organism",
+                    "jira": "https://jira.jnj.com/browse/JEPZ-928",
+                    "children": [
+                        {
+                            "name": "Jump Links",
+                            "description": "Jump Links to Product Information sections",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Molecule",
+                            "jira": "https://jira.jnj.com/browse/JEPZ-914",
+                            "children": [
+                                {
+                                    "name": "List of Links",
+                                    "description": "List of Links Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Link",
+                                            "description": "Link Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "List of Accordions",
+                            "description": "Information about how to use the product",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Molecule",
+                            "jira": "https://jira.jnj.com/browse/JEPZ-923",
+                            "children": [
+                                {
+                                    "name": "Accordion",
+                                    "description": "Accordion component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Content block",
+                                            "description": "Content block/ Box",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Divider",
+                    "description": "Divider Component",
+                    "value": "1",
+                    "status": "Ready",
+                    "milestone": "(I)",
+                    "taxonomy": "Atom",
+                    "jira": "",
+                    "children": []
+                },
+                {
+                    "name": "Related Products Section",
+                    "description": "Divider Component with Product Card Carousel",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Layout",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Headline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Product Card Carousel",
+                            "description": "Product Card Carousel",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "https://jira.jnj.com/browse/JEPZ-738",
+                            "children": [
+                                {
+                                    "name": "Product Card",
+                                    "description": "Product Card Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Organism",
+                                    "jira": "https://jira.jnj.com/browse/JEPZ-735",
+                                    "children": [
+                                        {
+                                            "name": "Product Image",
+                                            "description": "Media Wrapper",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(II)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Eyebrow",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Product Title",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Product Description",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Rating & Reviews",
+                                            "description": "Rating & Reviews Integration",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(III*)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Scroll Indicator",
+                                    "description": "Scroll Indicator Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Rating & Reviews",
+                    "description": "Rating & Reviews Integration",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(III*)",
+                    "taxonomy": "Molecule",
+                    "jira": "",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Product Listing Page",
+            "description": "Product Listing Page Template",
+            "value": "1",
+            "status": "WIP",
+            "milestone": "(III+)",
+            "taxonomy": "Template",
+            "jira": "",
+            "children": [
+                {
+                    "name": "Hero Card",
+                    "description": "Hero Card Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Organism",
+                    "jira": "https://jira.jnj.com/browse/JEPZ-740",
+                    "children": []
+                },
+                {
+                    "name": "Filter",
+                    "description": "Filter Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(III)",
+                    "taxonomy": "Organism",
+                    "jira": "",
+                    "children": []
+                },
+                {
+                    "name": "Sort",
+                    "description": "Sort Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(III)",
+                    "taxonomy": "Organism",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Icon Button",
+                            "description": "Icon Button Component. A button designed specifically for usage with a single icon",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Link",
+                            "description": "Link Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Dropdown",
+                            "description": "Dropdown Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(III)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "List of Dropdown Selects",
+                                    "description": "List of Dropdown Selects",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(III)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Divider",
+                                            "description": "Divider Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Product List",
+                    "description": "Product List on PLP",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Molecule",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Grid",
+                            "description": "Grid Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Molecule",
+                            "jira": "https://jira.jnj.com/browse/JEPZ-730",
+                            "children": []
+                        },
+                        {
+                            "name": "Product Card",
+                            "description": "Product Card Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "https://jira.jnj.com/browse/JEPZ-735",
+                            "children": []
+                        },
+                        {
+                            "name": "Load More",
+                            "description": "Load More Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Load More Indicator",
+                                    "description": "Showing N of M",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Button",
+                                    "description": "Button Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Discontinued Products",
+                    "description": "Discontinued Products Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(III+)",
+                    "taxonomy": "Organism",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Title",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "See All Products Button",
+                            "description": "Button Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Related Articles Section",
+                    "description": "Content Block Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(III)",
+                    "taxonomy": "Layout",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Title",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Article Card Carousel",
+                            "description": "Article Card Carousel Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(III)",
+                            "taxonomy": "Organism",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Grid",
+                                    "description": "Grid Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "https://jira.jnj.com/browse/JEPZ-730",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Article Card",
+                                    "description": "Article Card Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(III)",
+                                    "taxonomy": "Organism",
+                                    "jira": "https://jira.jnj.com/browse/JEPZ-736",
+                                    "children": [
+                                        {
+                                            "name": "Image",
+                                            "description": "Image Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Eyebrow",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Article Title",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Read More Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Recently Viewed Section",
+                    "description": "Content Block Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(III+)",
+                    "taxonomy": "Organism",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Title",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Product Card Carousel",
+                            "description": "Product Card Carousel",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "https://jira.jnj.com/browse/JEPZ-738",
+                            "children": [
+                                {
+                                    "name": "Grid",
+                                    "description": "Grid Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "https://jira.jnj.com/browse/JEPZ-730",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Product Card",
+                                    "description": "Product Card Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Organism",
+                                    "jira": "https://jira.jnj.com/browse/JEPZ-735",
+                                    "children": [
+                                        {
+                                            "name": "Product Image",
+                                            "description": "Media Wrapper",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(II)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Eyebrow",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Product Title",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Product Description",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Rating & Reviews",
+                                            "description": "Rating & Reviews Integration",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(III*)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Scroll Indicator",
+                                    "description": "Scroll Indicator Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Article Page",
+            "description": "Article Page Template",
+            "value": "1",
+            "status": "WIP",
+            "milestone": "(III+)",
+            "taxonomy": "Template",
+            "jira": "",
+            "children": [
+                {
+                    "name": "Hero Card",
+                    "description": "Hero Card Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Organism",
+                    "jira": "https://jira.jnj.com/browse/JEPZ-740",
+                    "children": [
+                        {
+                            "name": "Image",
+                            "description": "Image Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Eyebrow",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Headline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Description",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Button",
+                            "description": "Button Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Content block",
+                    "description": "Content block/ Box",
+                    "value": "1",
+                    "status": "Ready",
+                    "milestone": "(I)",
+                    "taxonomy": "Molecule",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Headline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "SubHeadline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Body",
+                            "description": "Text Block",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Text Block",
+                                    "description": "Text Block Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Typography",
+                                            "description": "Typography Tokens",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Token",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Bulleted List",
+                                    "description": "Bulleted List Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Bulleted List Item",
+                                            "description": "Bulleted List Item",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(II)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Small Image List",
+                            "description": "Small Image List: Image & Text Block",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Image",
+                                    "description": "Image Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Text Block",
+                                    "description": "Text Block Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Image&Text",
+                            "description": "Image&Text Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Media Wrapper",
+                                    "description": "Media Wrapper Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Text Block",
+                                    "description": "Text Block Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Divider",
+                            "description": "Divider Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "References",
+                    "description": "Divider Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(III+)",
+                    "taxonomy": "Organism",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "SubHeadline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Bulleted List Item",
+                            "description": "Bulleted List Item",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Text Block",
+                                    "description": "Text Block Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Load More",
+                            "description": "Load More Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Load More Indicator",
+                                    "description": "Showing N of M",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "View All References Button",
+                                    "description": "Button Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Related Products Section",
+                    "description": "Divider Component with Product Card Carousel",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Layout",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Headline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Product Card Carousel",
+                            "description": "Product Card Carousel",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "https://jira.jnj.com/browse/JEPZ-738",
+                            "children": [
+                                {
+                                    "name": "Product Card",
+                                    "description": "Product Card Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Organism",
+                                    "jira": "https://jira.jnj.com/browse/JEPZ-735",
+                                    "children": [
+                                        {
+                                            "name": "Product Image",
+                                            "description": "Media Wrapper",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(II)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Eyebrow",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Product Title",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Product Description",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Rating & Reviews",
+                                            "description": "Rating & Reviews Integration",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(III*)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Scroll Indicator",
+                                    "description": "Scroll Indicator Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Related Articles Section",
+                    "description": "Content Block Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(III)",
+                    "taxonomy": "Layout",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Title",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Article Card Row",
+                            "description": "Article Card Row Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(III)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Grid",
+                                    "description": "Grid Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "https://jira.jnj.com/browse/JEPZ-730",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Article Card",
+                                    "description": "Article Card Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(III)",
+                                    "taxonomy": "Organism",
+                                    "jira": "https://jira.jnj.com/browse/JEPZ-736",
+                                    "children": [
+                                        {
+                                            "name": "Media Wrapper",
+                                            "description": "Media Wrapper Component",
+                                            "value": "1",
+                                            "status": "WIP",
+                                            "milestone": "(II)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Eyebrow",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Article Title",
+                                            "description": "Typography",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Read More Button",
+                                            "description": "Button Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Molecule",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Footer",
+            "description": "Header Template",
+            "value": "1",
+            "status": "WIP",
+            "milestone": "(II)",
+            "taxonomy": "Layout",
+            "jira": "",
+            "children": [
+                {
+                    "name": "Primary Footer",
+                    "description": "Primary Footer Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Layout",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Icon Button",
+                            "description": "Icon Button Component. A button designed specifically for usage with a single icon",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Icon",
+                                    "description": "Icon Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Button",
+                                    "description": "Button Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Navigation Section",
+                            "description": "Navigation Section Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Organism",
+                            "jira": "",
+                            "children": [
+                                {
+                                    "name": "Heading",
+                                    "description": "Typography",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                },
+                                {
+                                    "name": "List of Links",
+                                    "description": "List of Links Component",
+                                    "value": "1",
+                                    "status": "WIP",
+                                    "milestone": "(II)",
+                                    "taxonomy": "Molecule",
+                                    "jira": "",
+                                    "children": [
+                                        {
+                                            "name": "Link",
+                                            "description": "Link Component",
+                                            "value": "1",
+                                            "status": "Ready",
+                                            "milestone": "(I)",
+                                            "taxonomy": "Atom",
+                                            "jira": "",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Divider",
+                                    "description": "Divider Component",
+                                    "value": "1",
+                                    "status": "Ready",
+                                    "milestone": "(I)",
+                                    "taxonomy": "Atom",
+                                    "jira": "",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Divider",
+                            "description": "Divider Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Country Selector",
+                            "description": "Country Selector Component",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(III*)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Copyright Information",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Divider",
+                    "description": "Divider Component",
+                    "value": "1",
+                    "status": "Ready",
+                    "milestone": "(I)",
+                    "taxonomy": "Atom",
+                    "jira": "",
+                    "children": []
+                },
+                {
+                    "name": "Secondary Footer",
+                    "description": "Secondary Footer Component",
+                    "value": "1",
+                    "status": "WIP",
+                    "milestone": "(II)",
+                    "taxonomy": "Layout",
+                    "jira": "",
+                    "children": [
+                        {
+                            "name": "Logo",
+                            "description": "Logo Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Headline",
+                            "description": "Typography",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Body",
+                            "description": "Text Block",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Form Fields",
+                            "description": "Form Fields",
+                            "value": "1",
+                            "status": "WIP",
+                            "milestone": "(II)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Terms & Conditions",
+                            "description": "Text Block",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Molecule",
+                            "jira": "",
+                            "children": []
+                        },
+                        {
+                            "name": "Button",
+                            "description": "Button Component",
+                            "value": "1",
+                            "status": "Ready",
+                            "milestone": "(I)",
+                            "taxonomy": "Atom",
+                            "jira": "",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
