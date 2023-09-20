@@ -211,7 +211,7 @@
 
 "@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470.tgz?v=3":
   version "470.0.0"
-  resolved "https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470.tgz?v=3#8819f4e3f0b025cdbb8096956e5a2f8c85282a1a"
+  resolved "https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470.tgz?v=3#fbb452c2823c54fe2896aaf163568f74ed96e9e6"
 
 "@swc/helpers@0.5.2":
   version "0.5.2"
