@@ -27,12 +27,9 @@ const ObservableChart = () => {
 
   return (
     <div id="observablehq-chart-32e484a1">
-      <p>
-        Credit:{" "}
-        <a href="https://observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470">
-          Untitled by Sergiy Vasyletskyy&apos;s Workspace
-        </a>
-      </p>
+      <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            by Sergiy Vasyletskyy
+          </p>
     </div>
   );
 };
