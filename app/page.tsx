@@ -77,6 +77,23 @@ export default function Home() {
       ></iframe>
       <div className="divider"></div>
 
+      <p
+        className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
+        style={{ marginTop: '10px', marginBottom: '10px' }}
+      >
+        Vital DS Standard Website Component Genealogy &nbsp;
+      </p>
+
+      <iframe
+      style={{ backgroundColor: "white" }}
+      width="75%"
+      height="825"
+      frameBorder="0"
+      src="https://observablehq.com/embed/7533c984eedc1bc7?cells=chart"
+      scrolling="no"
+      ></iframe>
+      <div className="divider"></div>
+
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://confluence.jnj.com/display/JEPZ/Standard+Website+Template+and+Component+Decomposition"
