@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Runtime, Inspector } from "@observablehq/runtime";
-import notebook from "@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@474";
+import notebook from "./src/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@474";
 
 export default function Chart() {
 const chartRef = React.useRef();
