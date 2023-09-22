@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from "react";
-import EmbedlyIframe from "../components/EmbedlyIframe.js";
+import ObservableChart from "../components/ObservableChart";
 
 export default function Home() {
   return (
@@ -39,7 +39,7 @@ export default function Home() {
 
       <div>
       <h1>Timeline</h1>
-      <EmbedlyIframe src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@474?cells=chart" />
+      <ObservableChart />
       </div>
 
       <iframe
