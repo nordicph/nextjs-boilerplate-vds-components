@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import Chart from "./Chart"; // adjust the path according to your file structure
 
