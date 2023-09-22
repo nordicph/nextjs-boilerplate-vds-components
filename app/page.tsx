@@ -79,7 +79,6 @@ export default function Home() {
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@499?cells=chart3"
       scrolling="no"
       ></iframe>
-
       <div className="divider"></div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
