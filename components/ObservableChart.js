@@ -15,7 +15,7 @@ const loadObservableChart = async () => {
   script.type = "module";
   script.textContent = chartCode;
   
-  <script type="module" crossorigin src="https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470.js?v=3"></script>
+  <Script src="https://api.observablehq.com/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@470?v=3"></Script>
 
   // Append the script to the document
   document.body.appendChild(script);
