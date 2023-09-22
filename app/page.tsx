@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from "react";
-import EmbedlyIframe from "./EmbedlyIframe";
+import EmbedlyIframe from "../components/EmbedlyIframe.js";
 
 export default function Home() {
   return (
