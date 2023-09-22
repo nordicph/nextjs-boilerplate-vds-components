@@ -19,7 +19,6 @@ export default function Home() {
             <Image
               src="/Kenvue.svg"
               alt="Kenvue Logo"
-              className="dark:invert"
               width={100}
               height={24}
               priority
