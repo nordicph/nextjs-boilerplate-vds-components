@@ -1,7 +1,8 @@
 'use client'
+
 import { useEffect, useRef } from 'react';
 
-export default function ObservableChart({ width = 600 }) {
+export default function ObservableChart({ width = 600, src }) {
   const iframeRef = useRef(null);
 
   useEffect(() => {
@@ -33,7 +34,13 @@ export default function ObservableChart({ width = 600 }) {
 
   return (
     <div>
-      <iframe ref={iframeRef} width={width} frameborder="0" src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@474?cells=chart"></iframe>
+      <iframe 
+        ref={iframeRef} 
+        width={width} 
+        frameborder="0" 
+        style={{ backgroundColor: 'white' }} 
+        src={src}
+      ></iframe>
     </div>
   );
 }

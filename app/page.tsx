@@ -39,7 +39,7 @@ export default function Home() {
 
       <div>
       <h1>Timeline</h1>
-      <ObservableChart />
+      <ObservableChart src="https://observablehq.com/embed/@d3/sortable-bar-chart?cell=viewof+order&cell=chart&cell=data" />
       </div>
 
       <iframe
