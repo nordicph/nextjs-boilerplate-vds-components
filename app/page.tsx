@@ -17,7 +17,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/Kenvue.svg"
+              src="/kenvue.svg"
               alt="Kenvue Logo"
               width={100}
               height={24}
