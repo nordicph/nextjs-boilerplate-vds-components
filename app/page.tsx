@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import React from "react";
+import EmbedlyIframe from "./EmbedlyIframe";
 
 export default function Home() {
   return (
@@ -22,7 +24,7 @@ export default function Home() {
               className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
               width={100}
               height={24}
-              
+
               priority
             />
           </a>
@@ -35,6 +37,11 @@ export default function Home() {
         Vital DS Standard Website Delivery Timeline.&nbsp;
       </p>
 
+      <div>
+      <h1>Timeline</h1>
+      <EmbedlyIframe src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@474?cells=chart" />
+      </div>
+
       <iframe
       style={{ backgroundColor: "white" }}
       width="50%"
@@ -42,6 +49,7 @@ export default function Home() {
       frameBorder="0"
       src="https://observablehq.com/embed/7831f502b6563196?cells=StandardWebsiteTimeline"
       ></iframe>
+
       <p
         className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
         style={{ marginTop: '10px', marginBottom: '10px' }}
@@ -77,6 +85,7 @@ export default function Home() {
           </p>
         </a>
       </div>
+      
     </main>
   )
 }
