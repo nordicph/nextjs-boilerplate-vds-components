@@ -56,7 +56,7 @@ export default function Home() {
       width="75%"
       height="1440"
       frameBorder="0"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@520?cells=chart"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@548?cells=chart_links"
       scrolling="no"
       ></iframe>
 
