@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.divider {
+  border-top: 1px solid #ccc; /* Adjust the border properties as needed */
+  margin-top: 10px; /* Adjust the margin to control the spacing above the divider */
+  margin-bottom: 10px; /* Adjust the margin to control the spacing below the divider */
+}

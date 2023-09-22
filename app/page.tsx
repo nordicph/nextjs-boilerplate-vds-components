@@ -55,6 +55,8 @@ export default function Home() {
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@474?cells=chart"
       ></iframe>
 
+      <div className="divider"></div>
+
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://confluence.jnj.com/display/JEPZ/Standard+Website+Template+and+Component+Decomposition"
