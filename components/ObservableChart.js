@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function ObservableChart({ width = 600, src }) {
   const iframeRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     function onMessage(message) {
@@ -26,14 +27,27 @@ export default function ObservableChart({ width = 600, src }) {
       }
     }
 
+    function onLoad() {
+      setIsLoading(false);
+    }
+
+    const iframe = iframeRef.current;
+    if (iframe) {
+      iframe.addEventListener('load', onLoad);
+    }
+
     window.addEventListener("message", onMessage);
     return () => {
+      if (iframe) {
+        iframe.removeEventListener('load', onLoad);
+      }
       window.removeEventListener("message", onMessage);
     };
   }, []);
 
   return (
     <div>
+      {isLoading && <div>Loading...</div>}
       <iframe 
         ref={iframeRef} 
         width={width} 
@@ -44,3 +58,4 @@ export default function ObservableChart({ width = 600, src }) {
     </div>
   );
 }
+
