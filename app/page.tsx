@@ -39,8 +39,8 @@ export default function Home() {
 
       <iframe
       style={{ backgroundColor: "white" }}
-      width="50%"
-      height="480"
+      width="75%"
+      height="640"
       frameBorder="0"
       src="https://observablehq.com/embed/7831f502b6563196?cells=StandardWebsiteTimeline"
       ></iframe>
@@ -52,8 +52,8 @@ export default function Home() {
       </p>
       <iframe
       style={{ backgroundColor: "white" }}
-      width="50%"
-      height="600"
+      width="75%"
+      height="900"
       frameBorder="0"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@474?cells=chart"
       scrolling="no"
@@ -73,8 +73,8 @@ export default function Home() {
       </p>
       <iframe
       style={{ backgroundColor: "white" }}
-      width="50%"
-      height="550"
+      width="75%"
+      height="825"
       frameBorder="0"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@499?cells=chart3"
       scrolling="no"
