@@ -30,6 +30,9 @@ export default function Home() {
 
       <iframe
       style={{ backgroundColor: "white" }}
+      width="50%"
+      height="50%"
+      frameBorder="0"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@474?cells=chart"
       ></iframe>
       
