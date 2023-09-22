@@ -74,7 +74,7 @@ export default function Home() {
       <iframe
       style={{ backgroundColor: "white" }}
       width="50%"
-      height="600"
+      height="550"
       frameBorder="0"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@499?cells=chart3"
       scrolling="no"
