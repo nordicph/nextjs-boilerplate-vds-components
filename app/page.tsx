@@ -27,7 +27,14 @@ export default function Home() {
           </a>
         </div>
       </div>
-
+      <iframe
+      style={{ backgroundColor: "white" }}
+      width="50%"
+      height="480"
+      frameBorder="0"
+      src="https://observablehq.com/embed/7831f502b6563196?cells=StandardWebsiteTimeline"
+      ></iframe>
+      <p></p>
       <iframe
       style={{ backgroundColor: "white" }}
       width="50%"
