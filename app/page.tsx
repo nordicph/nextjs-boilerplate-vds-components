@@ -36,7 +36,6 @@ export default function Home() {
       >
         Vital DS Standard Website Delivery Timeline.&nbsp;
       </p>
-
       <iframe
       style={{ backgroundColor: "white" }}
       width="75%"
