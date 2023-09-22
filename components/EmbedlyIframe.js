@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useRef } from "react";
 
 function EmbedlyIframe({ src }) {
@@ -19,3 +20,5 @@ window.removeEventListener("message", onMessage);
 
 return <iframe id="embed" ref={iframeRef} src={src}></iframe>;
 }
+
+export default EmbedlyIframe;
