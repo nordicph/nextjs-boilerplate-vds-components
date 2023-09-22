@@ -5,6 +5,17 @@ import { useEffect, useRef, useState } from 'react';
 export default function ObservableChart({ width = 600, src }) {
   const iframeRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [hasMinTimeElapsed, setHasMinTimeElapsed] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setHasMinTimeElapsed(true);
+    }, 2000);  // 2 seconds
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
 
   useEffect(() => {
     function onMessage(message) {
@@ -47,7 +58,7 @@ export default function ObservableChart({ width = 600, src }) {
 
   return (
     <div>
-      {isLoading && <div>Loading...</div>}
+      {(isLoading || !hasMinTimeElapsed) && <div>Loading...</div>}
       <iframe 
         ref={iframeRef} 
         width={width} 
@@ -58,4 +69,3 @@ export default function ObservableChart({ width = 600, src }) {
     </div>
   );
 }
-
