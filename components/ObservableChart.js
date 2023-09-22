@@ -58,14 +58,17 @@ export default function ObservableChart({ width = 600, src }) {
 
   return (
     <div>
-      {(isLoading || !hasMinTimeElapsed) && <div>Loading...</div>}
-      <iframe 
-        ref={iframeRef} 
-        width={width} 
-        frameborder="0" 
-        style={{ backgroundColor: 'white' }} 
-        src={src}
-      ></iframe>
+      {isLoading || !hasMinTimeElapsed ? (
+        <div>Loading...</div>
+      ) : (
+        <iframe 
+          ref={iframeRef} 
+          width={width} 
+          frameborder="0" 
+          style={{ backgroundColor: 'white' }} 
+          src={src}
+        ></iframe>
+      )}
     </div>
   );
 }
