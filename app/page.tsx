@@ -55,7 +55,7 @@ export default function Home() {
       width="75%"
       height="1440"
       frameBorder="0"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@607?cells=chart_links"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@610?cells=chart_links"
       scrolling="no"
       ></iframe>
 
@@ -71,7 +71,7 @@ export default function Home() {
       width="75%"
       height="1200"
       frameBorder="0"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@609?cells=chart6"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@611?cells=chart6"
       scrolling="no"
       ></iframe>
       <div className="divider"></div>
