@@ -82,7 +82,6 @@ export default function Home() {
       >
         Vital DS Standard Website Component Genealogy &nbsp;
       </p>
-
       <iframe
       style={{ backgroundColor: "white" }}
       width="75%"
