@@ -88,7 +88,7 @@ export default function Home() {
       width="75%"
       height="825"
       frameBorder="0"
-      src="https://observablehq.com/embed/7533c984eedc1bc7@501?cells=chart"
+      src="https://observablehq.com/embed/7533c984eedc1bc7?cells=chart_links"
       scrolling="no"
       ></iframe>
       <div className="divider"></div>
