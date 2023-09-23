@@ -103,7 +103,7 @@ export default function Home() {
       width="75%"
       height="1200"
       frameBorder="0"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@641?cells=chart4"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown?cells=chart4"
       scrolling="no"
       ></iframe>
       <div className="divider"></div>
