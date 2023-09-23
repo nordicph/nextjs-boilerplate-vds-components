@@ -37,7 +37,7 @@ export default function Home() {
         Vital DS Standard Website Delivery Timeline.&nbsp;
       </p>
       <iframe
-      style={{ backgroundColor: "white" }}
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
       width="75%"
       height="640"
       frameBorder="0"
@@ -51,7 +51,7 @@ export default function Home() {
       </p>
 
       <iframe
-      style={{ backgroundColor: "white" }}
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
       width="75%"
       height="1440"
       frameBorder="0"
@@ -67,7 +67,7 @@ export default function Home() {
       </p>
 
       <iframe
-      style={{ backgroundColor: "white" }}
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
       width="75%"
       height="1440"
       frameBorder="0"
@@ -83,7 +83,7 @@ export default function Home() {
         Vital DS Standard Website Component Genealogy &nbsp;
       </p>
       <iframe
-      style={{ backgroundColor: "white" }}
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
       width="75%"
       height="1440"
       frameBorder="0"
