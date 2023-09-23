@@ -85,7 +85,7 @@ export default function Home() {
       <iframe
       style={{ backgroundColor: "white" }}
       width="75%"
-      height="1200"
+      height="1280"
       frameBorder="0"
       src="https://observablehq.com/embed/7533c984eedc1bc7@547?cells=chart_links"
       scrolling="no"
