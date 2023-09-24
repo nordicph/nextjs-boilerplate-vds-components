@@ -1,8 +1,50 @@
 import Image from 'next/image'
 import React from "react";
-import ObservableChart from "../components/ObservableChart";
+import { useEffect, useRef, useState } from 'react';
+import $ from 'jquery';
+
 
 export default function Home() {
+  useEffect(() => {
+    $(document).ready(() => {
+      $("iframe.observable-iframe").each((_: number, element:HTMLElement) => {
+        var $element = $(element);
+        var iframeHead = $element.contents().find('head');
+        iframeHead.append('<style>.loader,...'); // Continue with your style
+
+        var iframeBody = $element.contents().find('body');
+        
+        // inject loading spinner
+        iframeBody.append('<div class="loader"></div>');
+        
+        // center loading spinner
+        iframeBody.css('display', 'flex');
+        iframeBody.css('align-items', 'center');
+        iframeBody.css('justify-content', 'center');
+            });
+          });
+      }, []);
+
+      $(window).on('scroll', () => {
+        var A = $(window).scrollTop() || 0;
+        var B = A + ($(window).height() || 0);
+
+        var C = $('#my-iframe').position().top || 0;
+        var D = C + ($('#my-iframe').height() || 0);
+
+    
+        var frameIsWithinViewport = (A <= D && B >= C);
+
+        const iframeElement = $('#my-iframe');
+        const dataSrc = iframeElement.attr('data-src');
+        const dataLoaded = iframeElement.attr('data-loaded');
+
+        if (frameIsWithinViewport && dataLoaded === 'false' && dataSrc) {
+            iframeElement.attr('src', dataSrc);
+            iframeElement.attr('data-loaded', 'true');
+        }
+    });
+  [];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -37,10 +79,10 @@ export default function Home() {
         Vital DS Standard Website Delivery Timeline.&nbsp;
       </p>
       <iframe
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
+      className="observable-iframe"
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="640"
-      frameBorder="0"
       src="https://observablehq.com/embed/7831f502b6563196@317?cells=StandardWebsiteTimeline2"
       ></iframe>
       <p
@@ -51,12 +93,11 @@ export default function Home() {
       </p>
 
       <iframe
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
+      className="observable-iframe"
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
-      frameBorder="0"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@610?cells=chart_links"
-      scrolling="no"
       ></iframe>
 
       <p
@@ -67,12 +108,11 @@ export default function Home() {
       </p>
 
       <iframe
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
+      className="observable-iframe"
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
-      frameBorder="0"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@617?cells=chart6"
-      scrolling="no"
       ></iframe>
       <div className="divider"></div>
 
@@ -83,12 +123,11 @@ export default function Home() {
         Vital DS Standard Website Component Genealogy | Focused &nbsp;
       </p>
       <iframe
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
+      className="observable-iframe"
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1080"
-      frameBorder="0"
       src="https://observablehq.com/embed/7533c984eedc1bc7@547?cells=chart_links"
-      scrolling="no"
       ></iframe>
       <div className="divider"></div>
 
@@ -99,12 +138,11 @@ export default function Home() {
         Vital DS Standard Website Component Genealogy | Tree &nbsp;
       </p>
       <iframe
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue" }}
+      className="observable-iframe"
+      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1200"
-      frameBorder="0"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown?cells=chart4"
-      scrolling="no"
       ></iframe>
       <div className="divider"></div>
 
