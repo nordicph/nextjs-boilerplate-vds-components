@@ -79,7 +79,7 @@ export default function Home() {
       style={{ backgroundColor: "#FFFFFF", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="640"
-      src="https://observablehq.com/embed/1cde9c5aecae0048@33?cells=StandardWebsiteTimeline2"
+      src="https://observablehq.com/embed/1cde9c5aecae0048@34?cells=StandardWebsiteTimeline2"
       ></iframe>
 
       <div className="divider"></div>
