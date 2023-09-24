@@ -95,7 +95,7 @@ export default function Home() {
       style={{ backgroundColor: "#F6F2FC", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@645?cells=chart_links"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@655?cells=chart_links"
       ></iframe>
 
       <div className="divider"></div>
