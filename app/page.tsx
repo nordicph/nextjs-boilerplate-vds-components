@@ -32,6 +32,19 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    const iframe = document.querySelector('.observable-iframe') as HTMLIFrameElement;
+
+    if (!iframe) return; // Exit if iframe is null or undefined
+
+    // Assuming you have a .loader class in your CSS for styling the spinner
+    const spinner = document.createElement('div');
+    spinner.className = 'loader';
+    document.body.appendChild(spinner);
+    
+    iframe.onload = () => {
+      spinner.style.display = 'none';  // Hide the spinner once iframe loads
+    };
+
     if (isSpinnerAdded) {
       console.log("Spinner has been added to the iframe content.");
     } else {
@@ -58,7 +71,7 @@ export default function Home() {
         if (frameIsWithinViewport && dataLoaded === 'false' && dataSrc) {
             iframeElement.attr('src', dataSrc);
             iframeElement.attr('data-loaded', 'true');
-        }
+        };
     })};
   [];
   return (
