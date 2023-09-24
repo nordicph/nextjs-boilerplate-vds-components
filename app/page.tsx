@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from "react";
+import ObservableChart from "../components/ObservableChart";
 import { useEffect, useRef, useState } from 'react';
 import $ from 'jquery';
 
