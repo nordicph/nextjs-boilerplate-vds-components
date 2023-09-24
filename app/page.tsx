@@ -1,13 +1,12 @@
 import Image from 'next/image'
 import React from "react";
-import ObservableChart from "../components/ObservableChart";
 import { useEffect, useRef, useState } from 'react';
 import $ from 'jquery';
 
 
 export default function Home() {
   useEffect(() => {
-    $(document).ready(() => {
+    $(() => {
       $("iframe.observable-iframe").each((_: number, element:HTMLElement) => {
         var $element = $(element);
         var iframeHead = $element.contents().find('head');
