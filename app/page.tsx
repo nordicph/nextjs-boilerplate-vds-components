@@ -74,7 +74,7 @@ export default function Home() {
       </p>
       <iframe
       className="observable-iframe"
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
+      style={{ backgroundColor: "#FBF8FE", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="640"
       src="https://observablehq.com/embed/7831f502b6563196@317?cells=StandardWebsiteTimeline2"
@@ -88,7 +88,7 @@ export default function Home() {
 
       <iframe
       className="observable-iframe"
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
+      style={{ backgroundColor: "#FBF8FE", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@610?cells=chart_links"
@@ -103,7 +103,7 @@ export default function Home() {
 
       <iframe
       className="observable-iframe"
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
+      style={{ backgroundColor: "#FBF8FE", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@617?cells=chart6"
@@ -118,7 +118,7 @@ export default function Home() {
       </p>
       <iframe
       className="observable-iframe"
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
+      style={{ backgroundColor: "#FBF8FE", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1080"
       src="https://observablehq.com/embed/7533c984eedc1bc7@547?cells=chart_links"
@@ -133,7 +133,7 @@ export default function Home() {
       </p>
       <iframe
       className="observable-iframe"
-      style={{ backgroundColor: "white", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
+      style={{ backgroundColor: "#FBF8FE", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1200"
       src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown?cells=chart4"
