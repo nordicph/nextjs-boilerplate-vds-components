@@ -26,7 +26,7 @@ export default function Home() {
             });
           });
       }, []);
-
+      if (typeof window !== 'undefined') {
       $(window).on('scroll', () => {
         var A = $(window).scrollTop() || 0;
         var B = A + ($(window).height() || 0);
@@ -45,7 +45,7 @@ export default function Home() {
             iframeElement.attr('src', dataSrc);
             iframeElement.attr('data-loaded', 'true');
         }
-    });
+    })};
   [];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
