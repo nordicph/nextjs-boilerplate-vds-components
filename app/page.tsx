@@ -51,28 +51,6 @@ export default function Home() {
       console.log("Spinner hasn't been added yet.");
     }
   }, [isSpinnerAdded]); // This useEffect logs the spinner state whenever it changes
-
-
-      if (typeof window !== 'undefined') {
-      $(window).on('scroll', () => {
-        var A = $(window).scrollTop() || 0;
-        var B = A + ($(window).height() || 0);
-
-        var C = $('#my-iframe').position().top || 0;
-        var D = C + ($('#my-iframe').height() || 0);
-
-    
-        var frameIsWithinViewport = (A <= D && B >= C);
-
-        const iframeElement = $('#my-iframe');
-        const dataSrc = iframeElement.attr('data-src');
-        const dataLoaded = iframeElement.attr('data-loaded');
-
-        if (frameIsWithinViewport && dataLoaded === 'false' && dataSrc) {
-            iframeElement.attr('src', dataSrc);
-            iframeElement.attr('data-loaded', 'true');
-        };
-    })};
   [];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
