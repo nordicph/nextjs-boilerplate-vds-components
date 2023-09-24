@@ -7,9 +7,11 @@ import $ from 'jquery';
 
 
 export default function Home() {
+  const [isSpinnerAdded, setIsSpinnerAdded] = useState(false); // This state flag is for the spinner
+
   useEffect(() => {
     $(() => {
-      $("iframe.observable-iframe").each((_: number, element:HTMLElement) => {
+      $("iframe.observable-iframe").each((_: number, element: HTMLElement) => {
         var $element = $(element);
         var iframeHead = $element.contents().find('head');
         iframeHead.append('<style>.loader,...'); // Continue with your style
@@ -23,9 +25,21 @@ export default function Home() {
         iframeBody.css('display', 'flex');
         iframeBody.css('align-items', 'center');
         iframeBody.css('justify-content', 'center');
-            });
-          });
-      }, []);
+
+        setIsSpinnerAdded(true);  // Set the flag to true when spinner is added
+      });
+    });
+  }, []);
+
+  useEffect(() => {
+    if (isSpinnerAdded) {
+      console.log("Spinner has been added to the iframe content.");
+    } else {
+      console.log("Spinner hasn't been added yet.");
+    }
+  }, [isSpinnerAdded]); // This useEffect logs the spinner state whenever it changes
+
+
       if (typeof window !== 'undefined') {
       $(window).on('scroll', () => {
         var A = $(window).scrollTop() || 0;
