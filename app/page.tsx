@@ -12,21 +12,8 @@ export default function Home() {
   useEffect(() => {
     $(() => {
       $("iframe.observable-iframe").each((_: number, element: HTMLElement) => {
-        var $element = $(element);
-        var iframeHead = $element.contents().find('head');
-        iframeHead.append('<style>.loader,...'); // Continue with your style
-
-        var iframeBody = $element.contents().find('body');
-        
-        // inject loading spinner
-        iframeBody.append('<div class="loader"></div>');
-        
-        // center loading spinner
-        iframeBody.css('display', 'flex');
-        iframeBody.css('align-items', 'center');
-        iframeBody.css('justify-content', 'center');
-
-        setIsSpinnerAdded(true);  // Set the flag to true when spinner is added
+        // Previously, there were code snippets here related to the spinner
+        // We've removed them to get rid of the spinner functionality
       });
     });
   }, []);
