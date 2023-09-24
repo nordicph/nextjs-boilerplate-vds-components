@@ -27,7 +27,7 @@ body {
 }
 
 .divider {
-  border-top: 1px solid #ffffff; /* Adjust the border properties as needed */
+  border-top: 2px solid #ffffff; /* Adjust the border properties as needed */
   margin-top: 20px; /* Adjust the margin to control the spacing above the divider */
   margin-bottom: 20px; /* Adjust the margin to control the spacing below the divider */
 }
