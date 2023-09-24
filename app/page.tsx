@@ -66,7 +66,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      
+
       <div className="divider"></div>
       <p
         className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
@@ -87,7 +87,7 @@ export default function Home() {
         className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
         style={{ marginTop: '10px', marginBottom: '10px' }}
       >
-        Vital DS Standard Website Taxonomy | Interactive &nbsp;
+        Vital DS Standard Website Taxonomy | Interactive. &nbsp;
       </p>
 
       <iframe
@@ -95,7 +95,7 @@ export default function Home() {
       style={{ backgroundColor: "#F6F2FC", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@610?cells=chart_links"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@645?cells=chart_links"
       ></iframe>
 
       <div className="divider"></div>
@@ -111,7 +111,7 @@ export default function Home() {
       style={{ backgroundColor: "#F6F2FC", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@617?cells=chart6"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@646?cells=chart6"
       ></iframe>
       
       <div className="divider"></div>
@@ -119,7 +119,7 @@ export default function Home() {
         className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
         style={{ marginTop: '10px', marginBottom: '10px' }}
       >
-        Vital DS Standard Website Component Genealogy | In-Focus | Interactive &nbsp;
+        Vital DS Standard Website Component Genealogy | In-Focus | Interactive. &nbsp;
       </p>
       <iframe
       className="observable-iframe"
@@ -134,7 +134,7 @@ export default function Home() {
         className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
         style={{ marginTop: '10px', marginBottom: '10px' }}
       >
-        Vital DS Standard Website Component Genealogy | Winter Tree | Interactive &nbsp;
+        Vital DS Standard Website Component Genealogy | Winter Tree | Interactive. &nbsp;
       </p>
       <iframe
       className="observable-iframe"
