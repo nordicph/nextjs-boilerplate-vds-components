@@ -3,8 +3,6 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 
-const [isDarkMode, setIsDarkMode] = useState(false);
-
 interface IFrameWithDescriptionProps {
   src: string;
   backgroundColor: string;
