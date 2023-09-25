@@ -3,6 +3,30 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 
+interface IFrameWithDescriptionProps {
+  src: string;
+  backgroundColor: string;
+  height: string | number;
+  description: string;
+}
+
+function IFrameWithDescription({ src, backgroundColor, height, description }: IFrameWithDescriptionProps) {
+  return (
+    <>
+      <div className="divider"></div>
+      <p className="mt-2.5 mb-2.5 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold">
+        {description}
+      </p>
+      <iframe
+        className="observable-iframe"
+        style={{ backgroundColor: backgroundColor, borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
+        width="75%"
+        height={height}
+        src={src}
+      ></iframe>
+    </>
+  );
+}
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -35,71 +59,40 @@ export default function Home() {
       </div>
 
       <div className="divider"></div>
-      <p className="mt-2.5 mb-2.5 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
-      >
-        Vital DS Standard Website Delivery Timeline.&nbsp;
-      </p>
-      <iframe
-      className="observable-iframe"
-      style={{ backgroundColor: "#FFFFFF", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
-      width="75%"
-      height="640"
-      src="https://observablehq.com/embed/1cde9c5aecae0048@71?cells=StandardWebsiteTimeline2"
-      ></iframe>
+      <IFrameWithDescription 
+        src="https://observablehq.com/embed/1cde9c5aecae0048@71?cells=StandardWebsiteTimeline2"
+        backgroundColor="#FFFFFF"
+        height="640"
+        description="Vital DS Standard Website Delivery Timeline."
+      />
 
-      <div className="divider"></div>
-      <p className="mt-2.5 mb-2.5 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
-      >
-        Vital DS Standard Website Taxonomy | Interactive. &nbsp;
-      </p>
+      <IFrameWithDescription 
+        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart_links"
+        backgroundColor="#F6F2FC"
+        height="1440"
+        description="Vital DS Standard Website Taxonomy | Interactive."
+      />
 
-      <iframe
-      className="observable-iframe"
-      style={{ backgroundColor: "#F6F2FC", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
-      width="75%"
-      height="1440"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart_links"
-      ></iframe>
+      <IFrameWithDescription 
+        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart6"
+        backgroundColor="#F6F2FC"
+        height="1440"
+        description="Vital DS Standard Website Taxonomy | Expanded."
+      />
 
-      <div className="divider"></div>
-      <p className="mt-2.5 mb-2.5 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
-      >
-        Vital DS Standard Website Taxonomy | Expanded. &nbsp;
-      </p>
+      <IFrameWithDescription 
+        src="https://observablehq.com/embed/7533c984eedc1bc7@625?cells=chart_links"
+        backgroundColor="#FBF8FE"
+        height="1080"
+        description="Vital DS Standard Website Component Genealogy | In-Focus | Interactive."
+      />
 
-      <iframe
-      className="observable-iframe"
-      style={{ backgroundColor: "#F6F2FC", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
-      width="75%"
-      height="1440"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart6"
-      ></iframe>
-      
-      <div className="divider"></div>
-      <p className="mt-2.5 mb-2.5 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
-      >
-        Vital DS Standard Website Component Genealogy | In-Focus | Interactive. &nbsp;
-      </p>
-      <iframe
-      className="observable-iframe"
-      style={{ backgroundColor: "#FBF8FE", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
-      width="75%"
-      height="1080"
-      src="https://observablehq.com/embed/7533c984eedc1bc7@625?cells=chart_links"
-      ></iframe>
-      
-      <div className="divider"></div>
-      <p className="mt-2.5 mb-2.5 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold"
-      >
-        Vital DS Standard Website Component Genealogy | Winter Tree | Interactive. &nbsp;
-      </p>
-      <iframe
-      className="observable-iframe"
-      style={{ backgroundColor: "#FFFFFF", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
-      width="75%"
-      height="1200"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart4"
-      ></iframe>
+      <IFrameWithDescription 
+        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart4"
+        backgroundColor="#FFFFFF"
+        height="1200"
+        description="Vital DS Standard Website Component Genealogy | Winter Tree | Interactive."
+      />
       
       <div className="divider"></div>
       <p className="mt-2.5 mb-2.5 mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
