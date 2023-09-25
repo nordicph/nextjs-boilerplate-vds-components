@@ -119,7 +119,7 @@ export default function Home() {
             Find in-depth information about Vital DS Components.
           </p>
         </a>
-      </div>
+      </p>
       <div className="divider"></div>
       
     </main>
