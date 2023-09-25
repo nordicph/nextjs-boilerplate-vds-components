@@ -29,24 +29,9 @@ function IFrameWithDescription({ src, backgroundColor, height, description }: IF
 }
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    // ... your iframe code ...
-
-    // Set the dark mode class on the body element based on the isDarkMode state
-    if (isDarkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-  }, [isDarkMode]);  // Depend on isDarkMode state so it runs when the mode changes
-
+  
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <button onClick={() => setIsDarkMode(!isDarkMode)}>
-        Toggle Dark Mode
-      </button>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
  
       <p className="custom-text flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
@@ -128,7 +113,6 @@ export default function Home() {
         </a>
       </p>
       <div className="divider"></div>
-      
     </main>
   )
 }
