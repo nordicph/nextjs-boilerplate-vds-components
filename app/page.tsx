@@ -80,7 +80,7 @@ export default function Home() {
       style={{ backgroundColor: "#FFFFFF", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="640"
-      src="https://observablehq.com/embed/1cde9c5aecae0048@69?cells=StandardWebsiteTimeline2"
+      src="https://observablehq.com/embed/1cde9c5aecae0048@71?cells=StandardWebsiteTimeline2"
       ></iframe>
 
       <div className="divider"></div>
@@ -96,7 +96,7 @@ export default function Home() {
       style={{ backgroundColor: "#F6F2FC", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@655?cells=chart_links"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart_links"
       ></iframe>
 
       <div className="divider"></div>
@@ -112,7 +112,7 @@ export default function Home() {
       style={{ backgroundColor: "#F6F2FC", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1440"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@646?cells=chart6"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart6"
       ></iframe>
       
       <div className="divider"></div>
@@ -142,7 +142,7 @@ export default function Home() {
       style={{ backgroundColor: "#FFFFFF", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1200"
-      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown?cells=chart4"
+      src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart4"
       ></iframe>
       
       <div className="divider"></div>
