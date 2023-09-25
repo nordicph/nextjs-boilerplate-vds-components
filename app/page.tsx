@@ -7,37 +7,15 @@ import $ from 'jquery';
 
 
 export default function Home() {
-  const [isSpinnerAdded, setIsSpinnerAdded] = useState(false); // This state flag is for the spinner
-
-  useEffect(() => {
-    $(() => {
-      $("iframe.observable-iframe").each((_: number, element: HTMLElement) => {
-        // Previously, there were code snippets here related to the spinner
-        // We've removed them to get rid of the spinner functionality
-      });
-    });
-  }, []);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const iframe = document.querySelector('.observable-iframe') as HTMLIFrameElement;
 
     if (!iframe) return; // Exit if iframe is null or undefined
 
-    // Assuming you have a .loader class in your CSS for styling the spinner
-    const spinner = document.createElement('div');
-    spinner.className = 'loader';
-    document.body.appendChild(spinner);
-    
-    iframe.onload = () => {
-      spinner.style.display = 'none';  // Hide the spinner once iframe loads
-    };
-
-    if (isSpinnerAdded) {
-      console.log("Spinner has been added to the iframe content.");
-    } else {
-      console.log("Spinner hasn't been added yet.");
-    }
-  }, [isSpinnerAdded]); // This useEffect logs the spinner state whenever it changes
+  }); // This useEffect logs the spinner state whenever it changes
+  
   [];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
