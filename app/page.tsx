@@ -127,7 +127,7 @@ export default function Home() {
       style={{ backgroundColor: "#FBF8FE", borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
       width="75%"
       height="1080"
-      src="https://observablehq.com/embed/7533c984eedc1bc7@566?cells=chart_links"
+      src="https://observablehq.com/embed/7533c984eedc1bc7@625?cells=chart_links"
       ></iframe>
       
       <div className="divider"></div>
