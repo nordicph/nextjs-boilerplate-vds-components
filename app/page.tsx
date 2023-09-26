@@ -99,12 +99,12 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-24 p-24">
       <div className="wrapper">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
 
           {/* Header with navigation */}
-          <header id="Vital DS Standard Website Header" className="">
+          <header id="Vital DS Standard Website Header" className="relative z-50">
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 401.1">
                 {/* SVG content... */}
             </svg>
