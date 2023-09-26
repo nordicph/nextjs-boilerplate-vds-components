@@ -64,12 +64,17 @@ export default function Home() {
       if (targetId) {  // Check if targetId is not null
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-          targetElement.scrollIntoView({
+          const offset = 100;  // Offset for the padding or menu height. Adjust as needed.
+          const y = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+    
+          window.scrollTo({
+            top: y,
             behavior: 'smooth',
           });
         }
       }
     };
+    
     
 
     if (openMenuButton) {
