@@ -36,6 +36,8 @@ export default function Home() {
   const headerRef = useRef<HTMLElement | null>(null);
   const pageRef = useRef<HTMLElement | null>(null);
   const openMenuButtonRef = useRef<HTMLButtonElement | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(true); // assuming menu is open by default
+
 
   useEffect(() => {
     const header = headerRef.current;
@@ -66,6 +68,7 @@ export default function Home() {
     
     const handleLinkClick = (event: MouseEvent) => {
       console.log("Link clicked");
+      setIsMenuOpen(prevState => !prevState);
       console.log(pageRef.current);
       event.preventDefault();
       event.stopPropagation();
@@ -116,7 +119,7 @@ export default function Home() {
     
   }, []);
   return (
-<main className="menuopen flex min-h-screen flex-col items-center justify-between pt-100 p-24" ref={pageRef}>
+    <main className={`${isMenuOpen ? 'menuopen' : ''} flex min-h-screen flex-col items-center justify-between pt-100 p-24`} ref={pageRef}>
     <div className="wrapper">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
 
