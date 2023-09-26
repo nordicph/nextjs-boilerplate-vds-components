@@ -61,14 +61,19 @@ export default function Home() {
     
     const handleLinkClick = (event: MouseEvent) => {
       console.log("Link clicked");  // Let's see if this gets logged
+      console.log(pageRef.current);
       event.preventDefault();
       const targetId = (event.target as Element).getAttribute('href');
         
       // Collapse the menu when a navigation item is clicked
       if (pageRef.current) {
-        pageRef.current.classList.remove('menuopen');
-        console.log("menuopen class removed");
-      }
+        if (pageRef.current.classList.contains('menuopen')) {
+            console.log("menuopen class exists, now removing");
+            pageRef.current.classList.remove('menuopen');
+        } else {
+            console.log("menuopen class doesn't exist");
+        }
+    }
     
       if (targetId) {  // Check if targetId is not null
         const targetElement = document.querySelector(targetId);
