@@ -60,22 +60,13 @@ export default function Home() {
     const handleLinkClick = (event: MouseEvent) => {
       event.preventDefault();
       const targetId = (event.target as Element).getAttribute('href');
-      
+    
       if (targetId) {  // Check if targetId is not null
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           targetElement.scrollIntoView({
             behavior: 'smooth',
           });
-    
-          // Wait a little bit to adjust the scroll position after the smooth scroll action completes
-          setTimeout(() => {
-            const offsetHeight = headerRef.current ? headerRef.current.offsetHeight : 0;  // Get the height of the header/menu
-            window.scrollTo({
-              top: window.scrollY - offsetHeight, 
-              behavior: 'auto'  // You can adjust the behavior here as needed
-            });
-          }, 500);  // 500 ms should be adjusted based on your actual smooth scroll duration
         }
       }
     };
