@@ -176,3 +176,13 @@ header.sticky nav a {
   transform: scale(0.3);
   transition-delay: 0.2s;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* or any high value to make sure it's on top */
+  background: white; /* or any color you prefer */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
