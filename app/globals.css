@@ -11,7 +11,7 @@
 .wrapper {
   width: 90%; /* set it to your preferred width */
   margin: 0 auto; /* this will center the container */
-  max-width: 1400px; /* optional, to ensure it doesn't get too wide on very large screens */
+  max-width: 1920px; /* optional, to ensure it doesn't get too wide on very large screens */
 }
 
 @media (prefers-color-scheme: dark) {
