@@ -122,7 +122,7 @@ export default function Home() {
 
       <IFrameWithDescription 
         id="timeline" 
-        src="https://observablehq.com/embed/1cde9c5aecae0048@71?cells=StandardWebsiteTimeline2"
+        src="https://observablehq.com/embed/1cde9c5aecae0048@88?cells=StandardWebsiteTimeline2"
         backgroundColor="#FFFFFF"
         height="640"
         description="Vital DS Standard Website Delivery Timeline."
@@ -130,7 +130,7 @@ export default function Home() {
 
       <IFrameWithDescription 
         id="taxonomyInteractive" 
-        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart_links"
+        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@661?cells=chart_links"
         backgroundColor="#F6F2FC"
         height="1440"
         description="Vital DS Standard Website Taxonomy | Interactive."
@@ -138,7 +138,7 @@ export default function Home() {
 
       <IFrameWithDescription 
         id="taxonomyExpanded" 
-        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart6"
+        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@661?cells=chart6"
         backgroundColor="#F6F2FC"
         height="1440"
         description="Vital DS Standard Website Taxonomy | Expanded."
@@ -146,7 +146,7 @@ export default function Home() {
 
       <IFrameWithDescription 
         id="genealogyInFocus" 
-        src="https://observablehq.com/embed/7533c984eedc1bc7@625?cells=chart_links"
+        src="https://observablehq.com/embed/7533c984eedc1bc7@627?cells=chart_links"
         backgroundColor="#FBF8FE"
         height="1080"
         description="Vital DS Standard Website Component Genealogy | In-Focus | Interactive."
@@ -154,7 +154,7 @@ export default function Home() {
 
       <IFrameWithDescription 
         id="genealogyTree" 
-        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart4"
+        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@661?cells=chart4"
         backgroundColor="#FFFFFF"
         height="1200"
         description="Vital DS Standard Website Component Genealogy | Winter Tree | Interactive."
