@@ -1,17 +1,21 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 interface IFrameWithDescriptionProps {
+  id : string;
   src: string;
   backgroundColor: string;
   height: string | number;
   description: string;
 }
 
-function IFrameWithDescription({ src, backgroundColor, height, description }: IFrameWithDescriptionProps) {
+
+
+function IFrameWithDescription({ id, src, backgroundColor, height, description }: IFrameWithDescriptionProps) {
   return (
+    <div id={id}>
     <>
       <div className="divider"></div>
       <p className="mt-2.5 mb-2.5 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold">
@@ -25,14 +29,96 @@ function IFrameWithDescription({ src, backgroundColor, height, description }: IF
         src={src}
       ></iframe>
     </>
+    </div>
   );
 }
 
 export default function Home() {
-  
+  const headerRef = useRef<HTMLElement | null>(null);
+  const pageRef = useRef<HTMLElement | null>(null);
+  const openMenuButtonRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    const header = headerRef.current;
+    const page = pageRef.current;
+    const openMenuButton = openMenuButtonRef.current;
+
+    const handleScroll = () => {
+      if (pageRef.current) {
+        pageRef.current.classList.remove('menuopen');
+      }
+      
+      if (window.scrollY >= 100 && headerRef.current) {
+        headerRef.current.classList.add('sticky');
+      } else if (headerRef.current) {
+        headerRef.current.classList.remove('sticky');
+      }
+    };
+
+    const handleButtonClick = (event: MouseEvent) => {
+      if (headerRef.current) headerRef.current.classList.remove('sticky');
+      if (pageRef.current) pageRef.current.classList.add('menuopen');
+    };
+    
+    const handleLinkClick = (event: MouseEvent) => {
+      event.preventDefault();
+      const targetId = (event.target as Element).getAttribute('href');
+    
+      if (targetId) {  // Check if targetId is not null
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+          });
+        }
+      }
+    };
+    
+
+    if (openMenuButton) {
+      openMenuButton.addEventListener('click', handleButtonClick);
+    }
+    
+    var links = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
+
+    links.forEach((link) => {
+        link.addEventListener('click', handleLinkClick);
+    });
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup
+    return () => {
+      if (openMenuButton) {
+        openMenuButton.removeEventListener('click', handleButtonClick);
+      }
+      links.forEach(link => {
+        link.removeEventListener('click', handleLinkClick);
+      });
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+
+          {/* Header with navigation */}
+          <header id="Vital DS Standard Website Header" className="">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 401.1">
+                {/* SVG content... */}
+            </svg>
+            <nav>
+                <a href="#timeline">Delivery Timeline</a>
+                <a href="#taxonomyInteractive">Taxonomy | Interactive</a>
+                <a href="#taxonomyExpanded">Taxonomy | Expanded</a>
+                <a href="#genealogyInFocus">Genealogy | In-Focus</a>
+                <a href="#genealogyTree">Genealogy | Tree</a>
+                <button id="openmenu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
  
       <p className="custom-text flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-bold">
         Vital DS Standard Website. &nbsp;
@@ -59,6 +145,7 @@ export default function Home() {
 
       <div className="divider"></div>
       <IFrameWithDescription 
+        id="timeline" 
         src="https://observablehq.com/embed/1cde9c5aecae0048@71?cells=StandardWebsiteTimeline2"
         backgroundColor="#FFFFFF"
         height="640"
@@ -66,6 +153,7 @@ export default function Home() {
       />
 
       <IFrameWithDescription 
+        id="taxonomyInteractive" 
         src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart_links"
         backgroundColor="#F6F2FC"
         height="1440"
@@ -73,6 +161,7 @@ export default function Home() {
       />
 
       <IFrameWithDescription 
+        id="taxonomyExpanded" 
         src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart6"
         backgroundColor="#F6F2FC"
         height="1440"
@@ -80,6 +169,7 @@ export default function Home() {
       />
 
       <IFrameWithDescription 
+        id="genealogyInFocus" 
         src="https://observablehq.com/embed/7533c984eedc1bc7@625?cells=chart_links"
         backgroundColor="#FBF8FE"
         height="1080"
@@ -87,6 +177,7 @@ export default function Home() {
       />
 
       <IFrameWithDescription 
+        id="genealogyTree" 
         src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@657?cells=chart4"
         backgroundColor="#FFFFFF"
         height="1200"
