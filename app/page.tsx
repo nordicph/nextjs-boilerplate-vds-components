@@ -17,13 +17,14 @@ function IFrameWithDescription({ id, src, backgroundColor, height, description }
   return (
     <div id={id}>
     <>
+      <div className="divider"></div>
       <p className="mt-2.5 mb-2.5 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-mono font-bold">
         {description}
       </p>
       <iframe
         className="observable-iframe"
         style={{ backgroundColor: backgroundColor, borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
-        width="100%"
+        width="75%"
         height={height}
         src={src}
       ></iframe>
@@ -35,9 +36,7 @@ function IFrameWithDescription({ id, src, backgroundColor, height, description }
 export default function Home() {
   const headerRef = useRef<HTMLElement | null>(null);
   const pageRef = useRef<HTMLElement | null>(null);
-  const openMenuButtonRef = useRef<HTMLButtonElement | null>(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(true); // assuming menu is open by default
-
+  const openMenuButtonRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const header = headerRef.current;
@@ -56,52 +55,31 @@ export default function Home() {
       }
     };
 
+    const handleButtonClick = (event: MouseEvent) => {
+      if (headerRef.current) headerRef.current.classList.remove('sticky');
+      if (pageRef.current) pageRef.current.classList.add('menuopen');
+    };
+    
     const handleLinkClick = (event: MouseEvent) => {
-      console.log("Link clicked");
-  
-      // Logging the class list of pageRef.current before any modifications
-      if (pageRef.current) {
-          console.log("Current classes before any action:", pageRef.current.classList);
-      }
-  
       event.preventDefault();
-      
       const targetId = (event.target as Element).getAttribute('href');
-  
-      // Close the menu if it's open
-      if (pageRef.current && pageRef.current.classList.contains('menuopen')) {
-          console.log("menuopen class exists, now removing");
-          pageRef.current.classList.remove('menuopen');
-      }
-  
+    
       if (targetId) {  // Check if targetId is not null
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-              targetElement.scrollIntoView({
-                  behavior: 'smooth',
-              });
-          }
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+          });
+        }
       }
-  };
-  
-  const handleButtonClick = (event: MouseEvent) => {
-      if (pageRef.current) {
-          if (pageRef.current.classList.contains('menuopen')) {
-              pageRef.current.classList.remove('menuopen');
-          } else {
-              pageRef.current.classList.add('menuopen');
-          }
-      }
-  };
-  
-  
+    };
+    
 
     if (openMenuButton) {
       openMenuButton.addEventListener('click', handleButtonClick);
     }
     
-    var links = document.querySelectorAll<HTMLAnchorElement>('nav a[href^="#"]');
-
+    var links = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
 
     links.forEach((link) => {
         link.addEventListener('click', handleLinkClick);
@@ -119,31 +97,54 @@ export default function Home() {
       });
       window.removeEventListener('scroll', handleScroll);
     };
-    
   }, []);
   return (
-<main id="page" className="menuopen flex min-h-screen flex-col items-center justify-between pt-100 p-24" ref={pageRef}>
-
-    <div className="wrapper">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="wrapper">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
 
           {/* Header with navigation */}
-          <header id="Vital DS Standard Website Header" className="relative z-50">
-              <nav className="menu">
-                  <a href="#timeline">Delivery. Timeline</a>
-                  <a href="#taxonomyInteractive">Taxonomy. Interactive</a>
-                  <a href="#taxonomyExpanded">Taxonomy. Expanded</a>
-                  <a href="#genealogyInFocus">Genealogy. In Focus</a>
-                  <a href="#genealogyTree">Genealogy. Tree</a>
-                  <button id="openmenu" ref={openMenuButtonRef}>
-                      <span></span>
-                      <span></span>
-                  </button>
-              </nav>
-          </header>
-
+          <header id="Vital DS Standard Website Header" className="">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 401.1">
+                {/* SVG content... */}
+            </svg>
+            <nav>
+                <a href="#timeline">Delivery Timeline.</a>
+                <a href="#taxonomyInteractive">Taxonomy. Interactive</a>
+                <a href="#taxonomyExpanded">Taxonomy. Expanded</a>
+                <a href="#genealogyInFocus">Genealogy. In-Focus</a>
+                <a href="#genealogyTree">Genealogy. Tree</a>
+                <button id="openmenu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+ 
+      <p className="custom-text flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-bold">
+        Vital DS Standard Website. &nbsp;
+        <code className="font-mono font-bold"></code>
+      </p>
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            By{' '}
+            <Image
+              src="/kenvue.svg"
+              alt="Kenvue Logo"
+              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+              width={100}
+              height={24}
+            />
+          </a>
+        </div>
       </div>
 
+      <div className="divider"></div>
       <IFrameWithDescription 
         id="timeline" 
         src="https://observablehq.com/embed/1cde9c5aecae0048@71?cells=StandardWebsiteTimeline2"
