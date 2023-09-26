@@ -62,6 +62,11 @@ export default function Home() {
     const handleLinkClick = (event: MouseEvent) => {
       event.preventDefault();
       const targetId = (event.target as Element).getAttribute('href');
+        
+      // Collapse the menu when a navigation item is clicked
+      if (pageRef.current) {
+        pageRef.current.classList.remove('menuopen');
+      }
     
       if (targetId) {  // Check if targetId is not null
         const targetElement = document.querySelector(targetId);
