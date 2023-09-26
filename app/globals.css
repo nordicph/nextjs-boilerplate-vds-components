@@ -15,6 +15,17 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
 .divider {
   border-top: 2px solid #ffffff; /* Adjust the border properties as needed */
   margin-top: 20px; /* Adjust the margin to control the spacing above the divider */
@@ -26,24 +37,6 @@
   /* Other styles go here */
 }
 
-body {
-  line-height: 1.6;
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    ) rgb(var(--background-start-rgb));
-  color: rgb(var(--foreground-rgb));
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-}
-body.stop {
-  overflow: hidden;
-}
 
 #page {
   position: relative;
