@@ -60,13 +60,22 @@ export default function Home() {
     const handleLinkClick = (event: MouseEvent) => {
       event.preventDefault();
       const targetId = (event.target as Element).getAttribute('href');
-    
+      
       if (targetId) {  // Check if targetId is not null
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           targetElement.scrollIntoView({
             behavior: 'smooth',
           });
+    
+          // Wait a little bit to adjust the scroll position after the smooth scroll action completes
+          setTimeout(() => {
+            const offsetHeight = headerRef.current ? headerRef.current.offsetHeight : 0;  // Get the height of the header/menu
+            window.scrollTo({
+              top: window.scrollY - offsetHeight, 
+              behavior: 'auto'  // You can adjust the behavior here as needed
+            });
+          }, 500);  // 500 ms should be adjusted based on your actual smooth scroll duration
         }
       }
     };
@@ -101,9 +110,6 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
           {/* Header with navigation */}
           <header id="Vital DS Standard Website Header" className="">
-            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 401.1">
-                {/* SVG content... */}
-            </svg>
             <nav>
                 <a href="#timeline">Delivery Timeline.</a>
                 <a href="#taxonomyInteractive">Taxonomy. Interactive</a>
@@ -117,7 +123,7 @@ export default function Home() {
             </nav>
         </header>
       </div>
-      
+
       <IFrameWithDescription 
         id="timeline" 
         src="https://observablehq.com/embed/1cde9c5aecae0048@71?cells=StandardWebsiteTimeline2"
