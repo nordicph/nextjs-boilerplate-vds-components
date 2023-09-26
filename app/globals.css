@@ -87,7 +87,7 @@ header {
 }
 header #logo {
   position: fixed;
-  top: 30px;
+  top: 10px;
   left: 0;
   right: 0;
   width: 100px;
@@ -107,7 +107,7 @@ header nav {
   right: 0;
   width: 750px;
   margin: 0 auto;
-  top: 60px;
+  top: 20px;
   background-color: rgba(144, 91, 91, 0.05);
   border-radius: 200px;
   z-index: 9;
