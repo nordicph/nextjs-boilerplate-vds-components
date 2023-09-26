@@ -109,10 +109,10 @@ export default function Home() {
                 {/* SVG content... */}
             </svg>
             <nav>
-                <a href="#timeline">Delivery Timeline.</a>
+                <a href="#timeline">Delivery. Timeline</a>
                 <a href="#taxonomyInteractive">Taxonomy. Interactive</a>
                 <a href="#taxonomyExpanded">Taxonomy. Expanded</a>
-                <a href="#genealogyInFocus">Genealogy. In-Focus</a>
+                <a href="#genealogyInFocus">Genealogy. In Focus</a>
                 <a href="#genealogyTree">Genealogy. Tree</a>
                 <button id="openmenu">
                     <span></span>
