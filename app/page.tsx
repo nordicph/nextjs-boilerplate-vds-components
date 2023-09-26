@@ -23,7 +23,7 @@ function IFrameWithDescription({ id, src, backgroundColor, height, description }
       <iframe
         className="observable-iframe"
         style={{ backgroundColor: backgroundColor, borderBottom: "1px solid blue", border: "none", overflow: "hidden" }}
-        width="75%"
+        width="100%"
         height={height}
         src={src}
       ></iframe>
