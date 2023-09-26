@@ -65,30 +65,30 @@ export default function Home() {
     };
     
     const handleLinkClick = (event: MouseEvent) => {
-      console.log("Link clicked");  // Let's see if this gets logged
+      console.log("Link clicked");
       console.log(pageRef.current);
       event.preventDefault();
+      
       const targetId = (event.target as Element).getAttribute('href');
-        
-      // Collapse the menu when a navigation item is clicked
       if (pageRef.current) {
-        if (pageRef.current.classList.contains('menuopen')) {
-            console.log("menuopen class exists, now removing");
-            pageRef.current.classList.remove('menuopen');
-        } else {
-            console.log("menuopen class doesn't exist");
-        }
-    }
-    
-      if (targetId) {  // Check if targetId is not null
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: 'smooth',
-          });
-        }
+          if (pageRef.current.classList.contains('menuopen')) {
+              console.log("menuopen class exists, now removing");
+              pageRef.current.classList.remove('menuopen');
+          } else {
+              console.log("menuopen class doesn't exist");
+              pageRef.current.classList.add('menuopen');
+          }
       }
-    };
+  
+      if (targetId) {  // Check if targetId is not null
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              targetElement.scrollIntoView({
+                  behavior: 'smooth',
+              });
+          }
+      }
+  };
 
     if (openMenuButton) {
       openMenuButton.addEventListener('click', handleButtonClick);
