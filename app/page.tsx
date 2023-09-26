@@ -131,9 +131,6 @@ export default function Home() {
 
           {/* Header with navigation */}
           <header id="Vital DS Standard Website Header" className="relative z-50">
-            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 401.1">
-                {/* SVG content... */}
-            </svg>
             <nav>
                 <a href="#timeline">Delivery. Timeline</a>
                 <a href="#taxonomyInteractive">Taxonomy. Interactive</a>
