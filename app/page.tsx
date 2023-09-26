@@ -56,47 +56,40 @@ export default function Home() {
       }
     };
 
-    const handleButtonClick = (event: MouseEvent) => {
-      if (pageRef.current) {
-        if (pageRef.current.classList.contains('menuopen')) {
-          pageRef.current.classList.remove('menuopen');
-        } else {
-          pageRef.current.classList.add('menuopen');
-        }
-      }
-    };
-    
     const handleLinkClick = (event: MouseEvent) => {
       console.log("Link clicked");
-    
+  
+      // Logging the class list of pageRef.current before any modifications
       if (pageRef.current) {
           console.log("Current classes before any action:", pageRef.current.classList);
       }
-    
+  
       event.preventDefault();
       
       const targetId = (event.target as Element).getAttribute('href');
-      if (pageRef.current) {
-          if (pageRef.current.classList.contains('menuopen')) {
-              console.log("menuopen class exists, now removing");
-              pageRef.current.classList.remove('menuopen');
-          } else {
-              console.log("menuopen class doesn't exist");
-              pageRef.current.classList.add('menuopen');
-          }
+  
+      // Close the menu if it's open
+      if (pageRef.current && pageRef.current.classList.contains('menuopen')) {
+          console.log("menuopen class exists, now removing");
+          pageRef.current.classList.remove('menuopen');
       }
-    
+  
       if (targetId) {  // Check if targetId is not null
           const targetElement = document.querySelector(targetId);
           if (targetElement) {
-              const topOffset = headerRef.current ? headerRef.current.offsetHeight : 0;
-              const elementPosition = targetElement.getBoundingClientRect().top;
-              const offsetPosition = elementPosition - topOffset;
-              
-              window.scrollBy({
-                  top: offsetPosition,
-                  behavior: 'smooth'
+              targetElement.scrollIntoView({
+                  behavior: 'smooth',
               });
+          }
+      }
+  };
+  
+  const handleButtonClick = (event: MouseEvent) => {
+      if (pageRef.current) {
+          if (pageRef.current.classList.contains('menuopen')) {
+              pageRef.current.classList.remove('menuopen');
+          } else {
+              pageRef.current.classList.add('menuopen');
           }
       }
   };
