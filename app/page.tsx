@@ -35,7 +35,7 @@ function IFrameWithDescription({ id, src, backgroundColor, height, description }
 export default function Home() {
   const headerRef = useRef<HTMLElement | null>(null);
   const pageRef = useRef<HTMLElement | null>(null);
-  const openMenuButtonRef = useRef<HTMLElement | null>(null);
+  const openMenuButtonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
     const header = headerRef.current;
@@ -110,7 +110,7 @@ export default function Home() {
     
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-100 p-24">
+<main className="flex min-h-screen flex-col items-center justify-between pt-100 p-24" ref={pageRef}>
     <div className="wrapper">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
 
@@ -125,7 +125,7 @@ export default function Home() {
                 <a href="#taxonomyExpanded">Taxonomy. Expanded</a>
                 <a href="#genealogyInFocus">Genealogy. In Focus</a>
                 <a href="#genealogyTree">Genealogy. Tree</a>
-                <button id="openmenu">
+                <button id="openmenu" ref={openMenuButtonRef}>
                     <span></span>
                     <span></span>
                 </button>
