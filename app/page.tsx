@@ -144,7 +144,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="divider"></div>
       <IFrameWithDescription 
         id="timeline" 
         src="https://observablehq.com/embed/1cde9c5aecae0048@71?cells=StandardWebsiteTimeline2"
