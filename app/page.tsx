@@ -55,8 +55,13 @@ export default function Home() {
     };
 
     const handleButtonClick = (event: MouseEvent) => {
-      if (headerRef.current) headerRef.current.classList.remove('sticky');
-      if (pageRef.current) pageRef.current.classList.add('menuopen');
+      if (pageRef.current) {
+        if (pageRef.current.classList.contains('menuopen')) {
+          pageRef.current.classList.remove('menuopen');
+        } else {
+          pageRef.current.classList.add('menuopen');
+        }
+      }
     };
     
     const handleLinkClick = (event: MouseEvent) => {
