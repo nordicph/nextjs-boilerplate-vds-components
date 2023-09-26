@@ -68,24 +68,23 @@ export default function Home() {
     
     const handleLinkClick = (event: MouseEvent) => {
       console.log("Link clicked");
-      setIsMenuOpen(prevState => !prevState);
-      console.log(pageRef.current);
+  
+      // Logging the class list of pageRef.current before any modifications
+      if (pageRef.current) {
+          console.log("Current classes before any action:", pageRef.current.classList);
+      }
+  
       event.preventDefault();
-      event.stopPropagation();
       
       const targetId = (event.target as Element).getAttribute('href');
       if (pageRef.current) {
-        setTimeout(() => {
-          if (pageRef.current) {
-            if (pageRef.current.className.includes('menuopen')) {
-                console.log("menuopen class exists, now removing");
-                pageRef.current.className = pageRef.current.className.replace('menuopen', '').trim();
-            } else {
-                console.log("menuopen class doesn't exist");
-                pageRef.current.className += ' menuopen';
-            }
-        }
-      }, 100);  // 100ms delay
+          if (pageRef.current.classList.contains('menuopen')) {
+              console.log("menuopen class exists, now removing");
+              pageRef.current.classList.remove('menuopen');
+          } else {
+              console.log("menuopen class doesn't exist");
+              pageRef.current.classList.add('menuopen');
+          }
       }
   
       if (targetId) {  // Check if targetId is not null
@@ -97,6 +96,7 @@ export default function Home() {
           }
       }
   };
+  
 
     if (openMenuButton) {
       openMenuButton.addEventListener('click', handleButtonClick);
@@ -124,7 +124,8 @@ export default function Home() {
     
   }, []);
   return (
-    <main className={`${isMenuOpen ? 'menuopen' : ''} flex min-h-screen flex-col items-center justify-between pt-100 p-24`} ref={pageRef}>
+<main id="page" className="menuopen flex min-h-screen flex-col items-center justify-between pt-100 p-24" ref={pageRef}>
+
     <div className="wrapper">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
 
