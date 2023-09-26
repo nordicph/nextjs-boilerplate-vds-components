@@ -68,12 +68,11 @@ export default function Home() {
     
     const handleLinkClick = (event: MouseEvent) => {
       console.log("Link clicked");
-  
-      // Logging the class list of pageRef.current before any modifications
+    
       if (pageRef.current) {
           console.log("Current classes before any action:", pageRef.current.classList);
       }
-  
+    
       event.preventDefault();
       
       const targetId = (event.target as Element).getAttribute('href');
@@ -86,16 +85,22 @@ export default function Home() {
               pageRef.current.classList.add('menuopen');
           }
       }
-  
+    
       if (targetId) {  // Check if targetId is not null
           const targetElement = document.querySelector(targetId);
           if (targetElement) {
-              targetElement.scrollIntoView({
-                  behavior: 'smooth',
+              const topOffset = headerRef.current ? headerRef.current.offsetHeight : 0;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition - topOffset;
+              
+              window.scrollBy({
+                  top: offsetPosition,
+                  behavior: 'smooth'
               });
           }
       }
   };
+  
   
 
     if (openMenuButton) {
