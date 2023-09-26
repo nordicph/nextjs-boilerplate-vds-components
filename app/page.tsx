@@ -75,13 +75,17 @@ export default function Home() {
       
       const targetId = (event.target as Element).getAttribute('href');
       if (pageRef.current) {
-          if (pageRef.current.classList.contains('menuopen')) {
-              console.log("menuopen class exists, now removing");
-              pageRef.current.classList.remove('menuopen');
-          } else {
-              console.log("menuopen class doesn't exist");
-              pageRef.current.classList.add('menuopen');
-          }
+        setTimeout(() => {
+          if (pageRef.current) {
+            if (pageRef.current.className.includes('menuopen')) {
+                console.log("menuopen class exists, now removing");
+                pageRef.current.className = pageRef.current.className.replace('menuopen', '').trim();
+            } else {
+                console.log("menuopen class doesn't exist");
+                pageRef.current.className += ' menuopen';
+            }
+        }
+      }, 100);  // 100ms delay
       }
   
       if (targetId) {  // Check if targetId is not null
@@ -98,7 +102,8 @@ export default function Home() {
       openMenuButton.addEventListener('click', handleButtonClick);
     }
     
-    var links = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
+    var links = document.querySelectorAll<HTMLAnchorElement>('nav a[href^="#"]');
+
 
     links.forEach((link) => {
         link.addEventListener('click', handleLinkClick);
