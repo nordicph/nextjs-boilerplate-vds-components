@@ -112,7 +112,7 @@ export default function Home() {
                 <a href="#taxonomyExpanded">Taxonomy. Expanded</a>
                 <a href="#genealogyInFocus">Genealogy. In-Focus</a>
                 <a href="#genealogyTree">Genealogy. Tree</a>
-                <button id="openmenu">
+                <button id="menuopen">
                     <span></span>
                     <span></span>
                 </button>
