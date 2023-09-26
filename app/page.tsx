@@ -129,18 +129,19 @@ export default function Home() {
 
           {/* Header with navigation */}
           <header id="Vital DS Standard Website Header" className="relative z-50">
-            <nav>
-                <a href="#timeline">Delivery. Timeline</a>
-                <a href="#taxonomyInteractive">Taxonomy. Interactive</a>
-                <a href="#taxonomyExpanded">Taxonomy. Expanded</a>
-                <a href="#genealogyInFocus">Genealogy. In Focus</a>
-                <a href="#genealogyTree">Genealogy. Tree</a>
-                <button id="openmenu" ref={openMenuButtonRef}>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </header>
+              <nav className="menu">
+                  <a href="#timeline">Delivery. Timeline</a>
+                  <a href="#taxonomyInteractive">Taxonomy. Interactive</a>
+                  <a href="#taxonomyExpanded">Taxonomy. Expanded</a>
+                  <a href="#genealogyInFocus">Genealogy. In Focus</a>
+                  <a href="#genealogyTree">Genealogy. Tree</a>
+                  <button id="openmenu" ref={openMenuButtonRef}>
+                      <span></span>
+                      <span></span>
+                  </button>
+              </nav>
+          </header>
+
       </div>
 
       <IFrameWithDescription 

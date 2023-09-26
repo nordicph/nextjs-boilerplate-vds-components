@@ -186,3 +186,13 @@ header.sticky nav a {
   background: white; /* or any color you prefer */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Default state: menu is hidden */
+.menu {
+  display: none;
+}
+
+/* When the parent has .menuopen class, the menu will be displayed */
+.menuopen .menu {
+  display: block;
+}
