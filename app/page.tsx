@@ -68,6 +68,7 @@ export default function Home() {
       console.log("Link clicked");
       console.log(pageRef.current);
       event.preventDefault();
+      event.stopPropagation();
       
       const targetId = (event.target as Element).getAttribute('href');
       if (pageRef.current) {
