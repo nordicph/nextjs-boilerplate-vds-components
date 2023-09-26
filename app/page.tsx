@@ -95,6 +95,7 @@ export default function Home() {
       });
       window.removeEventListener('scroll', handleScroll);
     };
+    
   }, []);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-100 p-24">
