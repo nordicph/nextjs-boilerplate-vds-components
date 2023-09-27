@@ -24,7 +24,7 @@
 
 body {
 
-  padding-top: 50px; /* or margin-top: 50px; */
+  padding-top: 10px; /* or margin-top: 50px; */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -59,7 +59,7 @@ body {
 section {
   display: flex;
   min-height: 100vh;
-  padding: 50px;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   background: #222;
