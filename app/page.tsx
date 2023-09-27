@@ -52,6 +52,26 @@ export default function Home() {
       }
     };
 
+    const iframeElem = document.getElementById("IFrameWithDescription");
+    // Only add the event listener if iframeElem is not null
+    iframeElem?.addEventListener("dblclick", openFullscreenPopup);
+    
+    function openFullscreenPopup() {
+      // Use type assertion to treat iframeElem as an HTMLIFrameElement
+      const iframeSrc = (iframeElem as HTMLIFrameElement)?.src;
+  
+      // Open the iframe src in a new popup window in fullscreen
+      const popup = window.open(iframeSrc, "iframePopup", "fullscreen=yes");
+  
+      // Check if popup dimensions match screen dimensions as a proxy for fullscreen
+      if (popup && (popup.outerWidth !== screen.width || popup.outerHeight !== screen.height)) {
+          popup.moveTo(0, 0);
+          popup.resizeTo(screen.width, screen.height);
+      }
+  }
+  
+  
+
     const handleButtonClick = (event: MouseEvent) => {
       if (headerRef.current) headerRef.current.classList.remove('sticky');
       if (pageRef.current) pageRef.current.classList.add('menuopen');
