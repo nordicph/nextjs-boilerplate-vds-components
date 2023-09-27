@@ -8,6 +8,11 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
   width: 100%; /* set it to your preferred width */
   margin: 0 auto; /* this will center the container */
