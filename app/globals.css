@@ -17,7 +17,8 @@ main {
   width: 100%; /* set it to your preferred width */
   margin: 0 auto; /* this will center the container */
   max-width: 1920px; /* optional, to ensure it doesn't get too wide on very large screens */
-  padding-top: 50px;
+  padding-top: 150px;
+  margin-top: 150px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +30,8 @@ main {
 }
 
 body {
+
+  padding-top: 150px; /* or margin-top: 50px; */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
