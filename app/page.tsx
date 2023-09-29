@@ -106,8 +106,8 @@ export default function Home() {
           {/* Header with navigation */}
           <header id="Vital DS Standard Website Header" className="">
             <nav>
-                <a href="#timeline">Delivery Timeline.</a>
                 <a href="#roadmap">Roadmap.</a>
+                <a href="#timeline">Delivery Timeline.</a>
                 <a href="#taxonomyInteractive">Taxonomy. Interactive</a>
                 <a href="#taxonomyExpanded">Taxonomy. Expanded</a>
                 <a href="#genealogyInFocus">Genealogy. In-Focus</a>
@@ -120,20 +120,21 @@ export default function Home() {
         </header>
       </div>
       <div className="wrapper" >
+
+      <IFrameWithDescription 
+        id="roadmap" 
+        src="https://app.productplan.com/pr/rCLoyti-is21l06IRfbgeWpEbply5_mK?hide_sidebar=true&hide_nav=true&hide_legend=true"
+        backgroundColor="#FFFFFF"
+        height="800"
+        description="Vital DS Standard Website Product Roadmap"
+      />
+
       <IFrameWithDescription 
         id="timeline" 
         src="https://observablehq.com/embed/1cde9c5aecae0048@102?cells=StandardWebsiteTimeline2"
         backgroundColor="#FFFFFF"
         height="640"
         description="Vital DS Standard Website Delivery Timeline."
-      />
-
-      <IFrameWithDescription 
-        id="roadmap" 
-        src="https://app.productplan.com/pr/rCLoyti-is21l06IRfbgeWpEbply5_mK?hide_nav=true&hide_legend=true"
-        backgroundColor="#FFFFFF"
-        height="800"
-        description="Vital DS Standard Website Product Roadmap"
       />
 
       <IFrameWithDescription 
