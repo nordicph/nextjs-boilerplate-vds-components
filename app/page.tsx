@@ -130,7 +130,7 @@ export default function Home() {
 
       <IFrameWithDescription 
         id="roadmap" 
-        src="https://app.productplan.com/pr/rCLoyti-is21l06IRfbgeWpEbply5_mK"
+        src="https://app.productplan.com/pr/rCLoyti-is21l06IRfbgeWpEbply5_mK?hide_nav=true&hide_legend=true"
         backgroundColor="#FFFFFF"
         height="800"
         description="Vital DS Standard Website Product Roadmap"
