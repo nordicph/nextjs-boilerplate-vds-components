@@ -128,6 +128,14 @@ export default function Home() {
       />
 
       <IFrameWithDescription 
+        id="timeline" 
+        src="https://app.productplan.com/pr/rCLoyti-is21l06IRfbgeWpEbply5_mK"
+        backgroundColor="#FFFFFF"
+        height="800"
+        description="Vital DS Standard Website Product Roadmap"
+      />
+
+      <IFrameWithDescription 
         id="taxonomyInteractive" 
         src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@672?cells=chart_links"
         backgroundColor="#F6F2FC"
