@@ -122,61 +122,6 @@ export default function Home() {
       </div>
       <div className="wrapper" >
 
-      <IFrameWithDescription 
-        id="roadmap" 
-        src="https://app.productplan.com/pr/rCLoyti-is21l06IRfbgeWpEbply5_mK?hide_sidebar=true&hide_nav=true&hide_legend=true"
-        backgroundColor="#FFFFFF"
-        height="800"
-        description="Vital DS Standard Website Product Roadmap"
-      />
-
-      <IFrameWithDescription 
-        id="roadmunk" 
-        src="https://eu-rm.roadmunk.com/publish/cca7760fed5561bb94e8f7eeee267b07cd2b670b"
-        backgroundColor="#FFFFFF"
-        height="800"
-        description="Vital DS Standard Website Product Roadmap (Roadmunk)"
-      />  
-
-      <IFrameWithDescription 
-        id="timeline" 
-        src="https://observablehq.com/embed/1cde9c5aecae0048@159?cells=StandardWebsiteTimeline2"
-        backgroundColor="#FFFFFF"
-        height="640"
-        description="Vital DS Standard Website Delivery Timeline."
-      />
-
-      <IFrameWithDescription 
-        id="taxonomyInteractive" 
-        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@673?cells=chart_links"
-        backgroundColor="#F6F2FC"
-        height="1440"
-        description="Vital DS Standard Website Taxonomy | Interactive."
-      />
-
-      <IFrameWithDescription 
-        id="taxonomyExpanded" 
-        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@673?cells=chart6"
-        backgroundColor="#F6F2FC"
-        height="1440"
-        description="Vital DS Standard Website Taxonomy | Expanded."
-      />
-
-      <IFrameWithDescription 
-        id="genealogyInFocus" 
-        src="https://observablehq.com/embed/7533c984eedc1bc7@652?cells=chart_links"
-        backgroundColor="#FBF8FE"
-        height="1080"
-        description="Vital DS Standard Website Component Genealogy | In-Focus | Interactive."
-      />
-
-      <IFrameWithDescription 
-        id="genealogyTree" 
-        src="https://observablehq.com/embed/@sergiy-vasyletskyy-ws/vds_pdp_template_breakdown@673?cells=chart4"
-        backgroundColor="#FFFFFF"
-        height="1200"
-        description="Vital DS Standard Website Component Genealogy | Winter Tree | Interactive."
-      />
       
       <div className="divider"></div>
       <p className="mt-2.5 mb-2.5 mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
