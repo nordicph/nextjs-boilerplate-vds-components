@@ -74,8 +74,6 @@ export default function Home() {
         }
       }
     };
-    
-    
 
     if (openMenuButton) {
       openMenuButton.addEventListener('click', handleButtonClick);
